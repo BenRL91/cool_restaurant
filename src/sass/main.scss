@@ -1,4 +1,5 @@
 @import 'normalize';
+$noma-font: 'Dosis', sans-serif;
 
 // PUT BORDERS ON EVERYTHING //
 // * {
@@ -18,6 +19,12 @@
 	.tab-wrapper {
 		width: 910px;
 		background: orange;
+		.show {
+
+		}
+		.hide {
+
+		}
 	}
 	aside {
 		width: 30%;
