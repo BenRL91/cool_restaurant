@@ -1,1 +1,11 @@
-/* CSS Entry Point */
+@import 'normalize';
+
+
+.app {
+	margin: auto;
+	width: 1300px;
+	height: 100vh;
+	background-color: #ccc;
+
+
+}
