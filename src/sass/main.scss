@@ -1,9 +1,12 @@
 @import 'normalize';
 
-// PUT BORDERS ON EVERYTHING //
-// * {
-// 	// border: 1px solid red;
-// }
+PUT BORDERS ON EVERYTHING //
+* {	
+	box-sizing: border-box;
+	// border: 1px solid red;
+}
+
+
 
 .app {
 	margin: auto;
@@ -58,7 +61,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	.tab-wrapper {
-		width: 910px;
+		padding: 15px;
+		width: calc(100%-1000px);
 		background: orange;
 		position: relative;
 		div {
@@ -81,7 +85,7 @@
 
 
 aside {
-		width: 30%;
+		width: 390px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
