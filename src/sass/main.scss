@@ -23,5 +23,11 @@
 		width: 30%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		img {
+			//img size may change//
+			height: 300px;
+			width: 300px;
+		}
 	}
 }
