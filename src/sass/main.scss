@@ -9,3 +9,12 @@
 
 
 }
+
+.main-aside {
+	display: flex;
+	flex-wrap: wrap;
+	aside {
+		display: flex;
+		flex-direction: column;
+	}
+}
