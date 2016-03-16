@@ -23,14 +23,6 @@
 
 
 
-
-.main{
-
-}
-
-
-
-
 .blog {
 	width: 30%;
 }
@@ -68,29 +60,23 @@
 	.tab-wrapper {
 		width: 910px;
 		background: orange;
-		div{ 
-			display: none;
-
+		position: relative;
+		div {
+			background: orange;
+			
 		}
+	}}
+
+	.hidden {
+		position: absolute;
+		z-index: -1;
 	}
+
+	.show {
+		position: absolute;
+		z-index: 1;
+		
 }
-
-
-.story{
-	margin: 20px;
-	img{
-		width:100%;
-	}
-}
-
-.menu {
-
-}
-
-.reservation{
-
-}
-
 
 
 
