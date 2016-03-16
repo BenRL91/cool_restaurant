@@ -12,14 +12,67 @@
 	background-color: #ccc;
 }
 
+
+.hero {
+	width: 100%;
+	img{
+	width: 100%;
+	}
+}
+
+
+
+
+
+.main{
+
+}
+
+
+
+
+.blog {
+	width: 30%;
+}
+
+.blog p {
+	width: 30%;
+}
+
+.specials {
+	width: 30%;
+
+}
+
+
+.specials img{
+	width: 100%;
+
+}
+
+.map {
+	width: 30%;
+
+}
+
+
+.map img{
+	width: 100%;
+
+}
+
+
 .main-aside {
 	display: flex;
 	flex-wrap: wrap;
 	.tab-wrapper {
 		width: 910px;
 		background: orange;
-	}
-	aside {
+	}}
+
+
+
+aside {
 		width: 30%;
 		display: flex;
 		flex-direction: column;
@@ -30,4 +83,6 @@
 			width: 300px;
 		}
 	}
-}
+
+
+
