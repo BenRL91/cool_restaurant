@@ -1,8 +1,8 @@
 @import 'normalize';
 
-PUT BORDERS ON EVERYTHING //
 * {	
 	box-sizing: border-box;
+
 	// border: 1px solid red;
 }
 
@@ -16,26 +16,53 @@ PUT BORDERS ON EVERYTHING //
 }
 
 
-.hero {
-	width: 100%;
-	img{
-	width: 100%;
+header{
+	display: flex;
+	justify-content: space-between;
+
+
+	.logo{
+
+
+	.socialicons{
+		
+
+		}
 	}
 }
 
 
 
 
-.blog {
-	width: 30%;
+
+
+.hero {
+	width: 100%;
+	img{
+		width: 100%;
+	}
 }
 
-.blog p {
-	width: 30%;
+
+
+main{
+	display: flex;
+	justify-content:space-between;
+	margin:15px;
+
+
 }
+
+
+
+.blog {
+	width: 350px;
+
+}
+
 
 .specials {
-	width: 30%;
+	width: 350px;
 
 }
 
@@ -46,7 +73,7 @@ PUT BORDERS ON EVERYTHING //
 }
 
 .map {
-	width: 30%;
+	width: 350px;
 
 }
 
@@ -58,16 +85,22 @@ PUT BORDERS ON EVERYTHING //
 
 
 .main-aside {
+	
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	// flex-wrap: wrap;
 	.tab-wrapper {
+
+		border: 1px solid #ccc;
 		padding: 15px;
-		width: 810px;
-		background: orange;
+		width: 900px;
+		// background: orange;
 		position: relative;
-		div {
-			background: orange;
-			
+		.story {
+			// background: orange;
+			img{
+				width:100%;
+			}
 		}
 	}}
 
@@ -91,8 +124,7 @@ aside {
 		align-items: center;
 		img {
 			//img size may change//
-			height: 300px;
-			width: 300px;
+			width: 380px;
 		}
 	}
 
