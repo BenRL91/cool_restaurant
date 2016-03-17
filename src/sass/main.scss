@@ -1,10 +1,13 @@
 @import 'normalize';
 $noma-font: 'Dosis', sans-serif;
 
-// PUT BORDERS ON EVERYTHING //
-// * {
-// 	// border: 1px solid red;
-// }
+* {	
+	box-sizing: border-box;
+
+	// border: 1px solid red;
+}
+
+
 
 .app {
 	margin: auto;
@@ -13,28 +16,117 @@ $noma-font: 'Dosis', sans-serif;
 	background-color: #ccc;
 }
 
-.main-aside {
-	display: flex;
-	flex-wrap: wrap;
-	.tab-wrapper {
-		width: 910px;
-		background: orange;
-		.show {
 
-		}
-		.hide {
+header{
+	display: flex;
+	justify-content: space-between;
+
+
+	.logo{
+
+
+	.socialicons{
+		
 
 		}
 	}
-	aside {
-		width: 30%;
+}
+
+
+
+
+
+
+.hero {
+	width: 100%;
+	img{
+		width: 100%;
+	}
+}
+
+
+
+main{
+	display: flex;
+	justify-content:space-between;
+	margin:15px;
+
+
+}
+
+
+
+.blog {
+	width: 350px;
+
+}
+
+
+.specials {
+	width: 350px;
+
+}
+
+
+.specials img{
+	width: 100%;
+
+}
+
+.map {
+	width: 350px;
+
+}
+
+
+.map img{
+	width: 100%;
+
+}
+
+
+.main-aside {
+	
+	display: flex;
+	justify-content: space-between;
+	// flex-wrap: wrap;
+	.tab-wrapper {
+		border: 1px solid #ccc;
+		padding: 15px;
+		width: 900px;
+		// background: orange;
+		position: relative;
+		.story {
+			// background: orange;
+			img{
+				width:100%;
+			}
+		}
+	}}
+
+	.hidden {
+		position: absolute;
+		z-index: -1;
+	}
+
+	.show {
+		position: absolute;
+		z-index: 1;
+		
+}
+
+
+
+aside {
+		width: 390px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		img {
 			//img size may change//
-			height: 300px;
-			width: 300px;
+			width: 380px;
 		}
 	}
-}
+
+
+
