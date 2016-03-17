@@ -8,8 +8,6 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 	// border: 1px solid red;
 }
 
-
-
 .app {
 	margin: auto;
 	width: 1300px;
@@ -21,10 +19,11 @@ header{
 	display: flex;
 	justify-content: space-between;
 	font-family: $noma-font;
+	height: 100px;
 
 
 	.logo{
-
+		font-size: 4em;
 
 	.socialicons{
 		
@@ -77,7 +76,8 @@ main{
 }
 
 #map {
-	height: 20%;
+	height: 200px;
+	width: 250px;
 }
 
 // .map img{
