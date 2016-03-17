@@ -104,8 +104,8 @@ main{
 .tab-container {
 	.tab {
 		position: absolute;
-		left: 30px;
-		width: 65%;
+		left: 20px;
+		width: 64%;
 	}
 	&.hide {
 		.tab {
@@ -122,6 +122,7 @@ aside {
 		align-items: center;
 		img {
 			//img size may change//
+			margin: 10px 10px 10px 0px;
 			width: 380px;
 		}
 	}
