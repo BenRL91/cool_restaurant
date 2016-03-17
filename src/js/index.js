@@ -6,10 +6,11 @@ $(".tab-container").on("click", "button", function(event){
 	$(event.currentTarget).parent().removeClass("hide");
 });
 
+var map;
       
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.197047, lng: 18.450762},
-    zoom: 8
+    zoom: 13
   });
 }
