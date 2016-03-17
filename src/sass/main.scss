@@ -25,45 +25,53 @@ header{
 
 	.logo{
 		font-size: 4em;
+		padding-left:15px;
 
 	.socialicons{
+
 		background: url('imgs/ more-social-media-icons.png') no-repeat -388px -202px;
 		background-size: 576px 390px;
 		width: 158px;
 		height: 158px;
+
 		}
 }
 
 
 .hero {
 	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
 	img{
 		width: 100%;
-		height: 500px;
+		height: 600px;
+
 	}
 }
 
 
 
 main{
+
 	display: flex;
 	justify-content:space-between;
 	margin:15px;
+
 }
 
 
 
 .blog {
 	width: 350px;
+	border: 1px solid gray;
+	padding: 15px;
 
 }
 
 
 .specials {
 	width: 350px;
+	border: 1px solid gray;
+	padding: 15px;
+
 
 }
 
@@ -73,15 +81,20 @@ main{
 
 }
 
-#map {
-	height: 200px;
-	width: 250px;
+
+.map_wrapper{
+	border: 1px solid gray;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding: 15px;
 }
 
-// .map img{
-// 	width: 100%;
 
-// }
+#map {
+	height: 400px;
+	width: 350px;	
+}
 
 
 .main-aside {
@@ -92,7 +105,7 @@ main{
 	.tab-wrapper {
 		border: 1px solid #ccc;
 		padding: 15px;
-		width: 900px;
+		width: 100%;
 		display: flex;
 		.story {
 			img{
@@ -103,18 +116,51 @@ main{
 }
 
 .tab-container {
+
+
 	.tab {
+		border-bottom: 2px solid #ccc;
+		padding: 15px;
+		background-color:#999;;
+		// border: 1px solid #999;
 		position: absolute;
-		left: 30px;
-		width: 900px;
+		left: 20px;
+		width: 64%;
 	}
 	&.hide {
 		.tab {
 			position: absolute;
 			display: none;
+
 		}
 	}
 }
+
+
+
+button{
+	border:none;
+	margin-left: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+
+}
+
+button:focus {
+	outline:0;
+	// color: #7E5E99;
+}
+
+button:hover{
+	background-color: #999;
+
+}
+
 
 aside {
 	width: 390px;
