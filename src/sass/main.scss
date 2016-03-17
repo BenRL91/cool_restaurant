@@ -90,7 +90,7 @@ main{
 
 
 #map {
-	height: 300px;
+	height: 400px;
 	width: 350px;	
 }
 
@@ -114,7 +114,13 @@ main{
 }
 
 .tab-container {
+
+
 	.tab {
+		border-bottom: 2px solid #ccc;
+		padding: 15px;
+		background-color: #C0C0C0;
+		// border: 1px solid #999;
 		position: absolute;
 		left: 20px;
 		width: 64%;
@@ -126,6 +132,32 @@ main{
 		}
 	}
 }
+
+
+
+button{
+	border:none;
+	margin-left: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+
+}
+
+button:focus {
+	outline:0;
+	// color: #7E5E99;
+}
+
+button:hover{
+	background-color: #999;
+
+}
+
 
 aside {
 		margin-top:30px;
