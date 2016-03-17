@@ -1,4 +1,5 @@
 @import 'normalize';
+
 $noma-font: 'Dosis', sans-serif;
 
 * {	
@@ -91,31 +92,31 @@ main{
 	justify-content: space-between;
 	// flex-wrap: wrap;
 	.tab-wrapper {
+		// overflow: hidden;
 		border: 1px solid #ccc;
 		padding: 15px;
 		width: 900px;
-		// background: orange;
-		position: relative;
+		display: flex;
 		.story {
 			// background: orange;
 			img{
 				width:100%;
 			}
 		}
-	}}
-
-	.hidden {
-		position: absolute;
-		z-index: -1;
 	}
-
-	.show {
-		position: absolute;
-		z-index: 1;
-		
 }
 
+.tab {
+	background: white;
+}
 
+.tab-container {
+	&.hide {
+		.tab {
+			display: none;
+		}
+	}
+}
 
 aside {
 		width: 390px;
