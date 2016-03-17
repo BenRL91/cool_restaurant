@@ -1,9 +1,9 @@
 // Javascript Entry Point
 import $ from "jquery";
 
-$(".tab-wrapper > div").on("click", function(event){
-	$(".tab-wrapper > div").removeClass("show");
-	$(".tab-wrapper > div").addClass("hidden");
-	$(event.currentTarget).addClass("show");
+
+$(".tab-container").on("click", "button", function(event){
+	$(".tab-container").addClass("hide");
+	$(event.currentTarget).parent().removeClass("hide");
 });
 
