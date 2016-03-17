@@ -38,8 +38,6 @@ header{
 
 .hero {
 	width: 100%;
-	// display: flex;
-	// justify-content: center;
 	img{
 		width: 100%;
 		height: 600px;
@@ -54,18 +52,24 @@ main{
 	display: flex;
 	justify-content:space-between;
 	margin:15px;
+
 }
 
 
 
 .blog {
 	width: 350px;
+	border: 1px solid gray;
+	padding: 15px;
 
 }
 
 
 .specials {
 	width: 350px;
+	border: 1px solid gray;
+	padding: 15px;
+
 
 }
 
@@ -75,15 +79,20 @@ main{
 
 }
 
-#map {
-	height: 200px;
-	width: 250px;
+
+.map_wrapper{
+	border: 1px solid gray;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	padding: 15px;
 }
 
-// .map img{
-// 	width: 100%;
 
-// }
+#map {
+	height: 300px;
+	width: 350px;	
+}
 
 
 .main-aside {
@@ -119,7 +128,7 @@ main{
 }
 
 aside {
-		// width: 35%;
+		margin-top:30px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -127,5 +136,8 @@ aside {
 			//img size may change//
 			margin: 10px 10px 10px 0px;
 			width: 380px;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+
 		}
 	}
