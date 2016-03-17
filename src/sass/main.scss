@@ -119,7 +119,7 @@ main{
 	.tab {
 		border-bottom: 2px solid #ccc;
 		padding: 15px;
-		background-color: #C0C0C0;
+		background-color:#999;;
 		// border: 1px solid #999;
 		position: absolute;
 		left: 20px;
@@ -129,6 +129,7 @@ main{
 		.tab {
 			position: absolute;
 			display: none;
+
 		}
 	}
 }
