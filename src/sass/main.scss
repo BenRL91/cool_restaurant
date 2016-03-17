@@ -13,7 +13,6 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 .app {
 	margin: auto;
 	width: 1300px;
-	height: 100vh;
 	background-color: #ccc;
 }
 
@@ -110,7 +109,7 @@ main{
 	.tab {
 		position: absolute;
 		left: 30px;
-		width: 900px;
+		// width: 900px;
 	}
 	&.hide {
 		.tab {
@@ -131,5 +130,6 @@ aside {
 		}
 	}
 
-
-
+footer {
+	height: 100vh;
+}
