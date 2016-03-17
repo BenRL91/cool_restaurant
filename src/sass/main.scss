@@ -55,8 +55,6 @@ main{
 	display: flex;
 	justify-content:space-between;
 	margin:15px;
-
-
 }
 
 
@@ -94,13 +92,11 @@ main{
 	justify-content: space-between;
 	// flex-wrap: wrap;
 	.tab-wrapper {
-		// overflow: hidden;
 		border: 1px solid #ccc;
 		padding: 15px;
 		width: 900px;
 		display: flex;
 		.story {
-			// background: orange;
 			img{
 				width:100%;
 			}
@@ -108,13 +104,15 @@ main{
 	}
 }
 
-.tab {
-	background: white;
-}
-
 .tab-container {
+	.tab {
+		position: absolute;
+		left: 30px;
+		width: 900px;
+	}
 	&.hide {
 		.tab {
+			position: absolute;
 			display: none;
 		}
 	}
