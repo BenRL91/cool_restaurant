@@ -12,20 +12,23 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 	position: relative;
 	margin: auto;
 	width: 1200px;
-	background-color: #ccc;
+	// background-color: #ccc;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 
 
 header{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
 	font-family: $noma-font;
-	height: 100px;
+	height: 100%;
 
 
 	.logo{
 		font-size: 4em;
-		padding-left:15px;
+		padding-bottom: 20px;
 
 	.socialicons{
 
@@ -33,6 +36,7 @@ header{
 		background-size: 576px 390px;
 		width: 158px;
 		height: 158px;
+
 
 		}
 	}
@@ -43,7 +47,7 @@ header{
 	width: 100%;
 	img{
 		width: 100%;
-		height: 600px;
+		height: 100%;
 
 	}
 }
