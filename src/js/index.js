@@ -7,18 +7,19 @@ $(".tab-container").on("click", "button", function(event){
 	$(event.currentTarget).parent().removeClass("hide");
 });
 
-
-
-
 var request = $.ajax({
-	url: 'https://json-data.herokuapp.com/restaurant/menu/1'
+  url: 'https://json-data.herokuapp.com/restaurant/menu/1'
 });
 
 var special = $.ajax({
   url: 'https://json-data.herokuapp.com/restaurant/special/1'
 });
 
-console.log(special);
+
+
+
+
+
 
 request.then(function(response){
 	var appz = response.appetizers;
@@ -63,6 +64,20 @@ request.then(function(response){
       </div>
   	 </div>`
   	 $('.menu').append(appzHtml);
+
+  special.then(function(specResponse) {
+if (app.id === specResponse.menu_item_id) {
+    var specHtml = `<span><b>Today's Special</b></span>       
+    <img src="./images/sea-scallops-yum.jpg">
+    <span>${app.item}</span><span>${app.price}</span>
+    <span>${app.description}</span>`
+    $('.specials').append( specHtml );
+
+}
+
+
+
+});
 })
 });
 
