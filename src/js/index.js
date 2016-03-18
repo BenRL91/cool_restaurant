@@ -13,6 +13,12 @@ var request = $.ajax({
 	url: 'https://json-data.herokuapp.com/restaurant/menu/1'
 });
 
+var special = $.ajax({
+  url: 'https://json-data.herokuapp.com/restaurant/special/1'
+});
+
+console.log(special);
+
 request.then(function(response){
 	var appz = response.appetizers;
 	appz.forEach(function(app) {
