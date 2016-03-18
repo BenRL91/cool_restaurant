@@ -77,9 +77,13 @@ request.then(function(response){
 
   special.then(function(specResponse) {
 if (app.id === specResponse.menu_item_id) {
-    var specHtml = `<span><b>Today's Special</b></span>       
+    var specHtml = `<span><b>Today's Special</b></span>
+    <br>       
     <img src="./images/sea-scallops-yum.jpg">
-    <span>${app.item}</span><span>${app.price}</span>
+    <br>
+    <span>${app.item}</span>
+    <span>${app.price}</span>
+    <br>
     <span>${app.description}</span>`
     $('.specials').append( specHtml );
 
