@@ -7,6 +7,16 @@ $(".tab-container").on("click", "button", function(event){
 	$(event.currentTarget).parent().removeClass("hide");
 });
 
+var newsRequest = $.ajax('https://json-data.herokuapp.com/restaurant/news/1');
+newsRequest.then(function(newsData){
+  // console.log(newsData)
+  $(".blog").append(`
+                    ${newsData.title} ${newsData.date_published}
+                    <br>
+                    ${newsData.post}
+    `)
+})
+
 var request = $.ajax({
   url: 'https://json-data.herokuapp.com/restaurant/menu/1'
 });
