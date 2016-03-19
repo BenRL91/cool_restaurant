@@ -36,20 +36,19 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <ul class="picky-eaters">
+       <h5>$${app.price}</h5>
+       <p>${app.description}</p>
+        <ul class="picky-eaters">
          <li class="allergies"><a href="#" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.">${app.allergies}</a></li>
          <li class="favorite"><a href="#" title="We have been doing this a long time and this item has become one of our favorites.">${app.favorite}</a></li>
          <li class="spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water.">${app.spicy}</a></li>
          <li class="vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products.">${app.vegan}</a></li>
        </ul>
-
-       <p>${app.description}</p>
-       <h5>$${app.price}</h5>
+       
        
       </div>
-  	 </div>`
+     </div>`
   	 $('.menu').append(appzHtml);
-
 })
 });
 
@@ -60,15 +59,14 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <ul class="picky-eaters">
+       <h5>$${app.price}</h5>
+       <p>${app.description}</p>
+        <ul class="picky-eaters">
          <li class="allergies"><a href="#" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.">${app.allergies}</a></li>
          <li class="favorite"><a href="#" title="We have been doing this a long time and this item has become one of our favorites.">${app.favorite}</a></li>
          <li class="spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water.">${app.spicy}</a></li>
          <li class="vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products.">${app.vegan}</a></li>
        </ul>
-
-       <p>${app.description}</p>
-       <h5>$${app.price}</h5>
        
       </div>
      </div>`
@@ -98,15 +96,14 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <ul class="picky-eaters">
+       <h5>$${app.price}</h5>
+       <p>${app.description}</p>
+        <ul class="picky-eaters">
          <li class="allergies"><a href="#" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.">${app.allergies}</a></li>
          <li class="favorite"><a href="#" title="We have been doing this a long time and this item has become one of our favorites.">${app.favorite}</a></li>
          <li class="spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water.">${app.spicy}</a></li>
          <li class="vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products.">${app.vegan}</a></li>
        </ul>
-
-       <p>${app.description}</p>
-       <h5>$${app.price}</h5>
        
       </div>
      </div>`
