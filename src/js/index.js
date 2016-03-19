@@ -38,9 +38,6 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <h5>$${app.price}</h5>
-       <p>${app.description}</p>
-
        <ul class="picky-eaters">
          <li>${app.allergies}</li>
          <li>${app.favorite}</li>
@@ -48,6 +45,9 @@ request.then(function(response){
          <li>${app.vegan}</li>
        </ul>
 
+       <p>${app.description}</p>
+       <h5>$${app.price}</h5>
+       
       </div>
   	 </div>`
   	 $('.menu').append(appzHtml);
@@ -61,9 +61,6 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <h5>$${app.price}</h5>
-       <p>${app.description}</p>
-
        <ul class="picky-eaters">
          <li>${app.allergies}</li>
          <li>${app.favorite}</li>
@@ -71,8 +68,11 @@ request.then(function(response){
          <li>${app.vegan}</li>
        </ul>
 
+       <p>${app.description}</p>
+       <h5>$${app.price}</h5>
+       
       </div>
-  	 </div>`
+     </div>`
   	 $('.menu').append(appzHtml);
 
   special.then(function(specResponse) {
@@ -102,9 +102,6 @@ request.then(function(response){
 	   <div class="menu-items">
 
        <h4>${app.item}</h4> 
-       <h5>$${app.price}</h5>
-       <p>${app.description}</p>
-
        <ul class="picky-eaters">
          <li>${app.allergies}</li>
          <li>${app.favorite}</li>
@@ -112,8 +109,11 @@ request.then(function(response){
          <li>${app.vegan}</li>
        </ul>
 
+       <p>${app.description}</p>
+       <h5>$${app.price}</h5>
+       
       </div>
-  	 </div>`
+     </div>`
   	 $('.menu').append(appzHtml);
 })
 });
