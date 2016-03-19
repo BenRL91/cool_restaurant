@@ -31,6 +31,7 @@ var special = $.ajax({
 
 
 
+
 request.then(function(response){
 	var appz = response.appetizers;
 	appz.forEach(function(app) {
@@ -39,10 +40,10 @@ request.then(function(response){
 
        <h4>${app.item}</h4> 
        <ul class="picky-eaters">
-         <li>${app.allergies}</li>
-         <li>${app.favorite}</li>
-         <li>${app.spicy}</li>
-         <li>${app.vegan}</li>
+         <li class="allergies">${app.allergies}</li>
+         <li class="favorite">${app.favorite}</li>
+         <li class="spicy">${app.spicy}</li>
+         <li class="vegan">${app.vegan}</li>
        </ul>
 
        <p>${app.description}</p>
@@ -62,10 +63,10 @@ request.then(function(response){
 
        <h4>${app.item}</h4> 
        <ul class="picky-eaters">
-         <li>${app.allergies}</li>
-         <li>${app.favorite}</li>
-         <li>${app.spicy}</li>
-         <li>${app.vegan}</li>
+         <li class="allergies">${app.allergies}</li>
+         <li class="favorite">${app.favorite}</li>
+         <li class="spicy">${app.spicy}</li>
+         <li class="vegan">${app.vegan}</li>
        </ul>
 
        <p>${app.description}</p>
@@ -103,10 +104,10 @@ request.then(function(response){
 
        <h4>${app.item}</h4> 
        <ul class="picky-eaters">
-         <li>${app.allergies}</li>
-         <li>${app.favorite}</li>
-         <li>${app.spicy}</li>
-         <li>${app.vegan}</li>
+         <li class="allergies">${app.allergies}</li>
+         <li class="favorite">${app.favorite}</li>
+         <li class="spicy">${app.spicy}</li>
+         <li class="vegan">${app.vegan}</li>
        </ul>
 
        <p>${app.description}</p>
