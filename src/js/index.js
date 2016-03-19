@@ -49,6 +49,7 @@ request.then(function(response){
       </div>
   	 </div>`
   	 $('.menu').append(appzHtml);
+
 })
 });
 
@@ -86,7 +87,6 @@ if (app.id === specResponse.menu_item_id) {
     $('.specials').append( specHtml );
 
 }
-
 });
 })
 });
