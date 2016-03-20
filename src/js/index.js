@@ -55,24 +55,27 @@ function menuItemTemplate(menuItemArray){
     var spicyListItem;
     var veganListItem;
     if (menuItem.allergies === 1) {
-      allergiesListItem = `<li class="allergies allergic"><a href="#" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.">${menuItem.allergies}</a></li>`
+      allergiesListItem = `<li class="allergies allergic"><a href="#" title="This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance."><img src="./images/allergies.png"></a></li>`
     } else {
-      allergiesListItem = `<li class="allergies greyed"><a href="#">${menuItem.allergies}</a></li>`
+      allergiesListItem = `<li class="allergies greyed"><a href="#"><img src="./images/allergies.png"></a></li>`
     };
+
     if (menuItem.favorite === 1) {
-      favoriteListItem = `<li class="favorite is-favorite"><a href="#" title="We have been doing this a long time and this item has become one of our favorites.">${menuItem.favorite}</a></li>`
+      favoriteListItem = `<li class="favorite is-favorite"><a href="#" title="We have been doing this a long time and this item has become one of our favorites."><img src="./images/favorite.png"></a></li>`
     } else {
-      favoriteListItem = `<li class="favorite greyed"><a href="#">${menuItem.favorite}</a></li>`
+      favoriteListItem = `<li class="favorite greyed"><a href="#"><img src="./images/favorite.png"></a></li>`
     };
+
     if (menuItem.spicy === 1) { 
-      spicyListItem = `<li class="spicy is-spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water.">${menuItem.spicy}</a></li>`
+      spicyListItem = `<li class="spicy is-spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water."><img src="./images/spicy.png"></a></li>`
     } else { 
-      spicyListItem = `<li class="spicy grayed"><a href="#">${menuItem.spicy}</a></li>`
+      spicyListItem = `<li class="spicy grayed"><a href="#"><img src="./images/spicy.png"></a></li>`
     };
+
     if (menuItem.vegan === 1) {
-      veganListItem = `<li class="vegan is-vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products.">${menuItem.vegan}</a></li>`
+      veganListItem = `<li class="vegan is-vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products."><img src="./images/vegan.png"></a></li>`
     } else {
-      veganListItem = `<li class="vegan grayed"><a href="#">${menuItem.vegan}</a></li>`
+      veganListItem = `<li class="vegan grayed"><a href="#"><img src="./images/vegan.png"></a></li>`
     };
   var menuItemHtml = `
      <div class="menu-items">
