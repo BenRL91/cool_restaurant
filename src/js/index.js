@@ -14,8 +14,8 @@ newsRequest.then(function(newsData){
                     ${newsData.title} ${newsData.date_published}
                     <br>
                     ${newsData.post}
-    `)
-})
+    `);
+});
 // Pulls the special API into the javascript
 var special = $.ajax({
   url: 'https://json-data.herokuapp.com/restaurant/special/1'
@@ -33,16 +33,16 @@ menuItemTemplate(response.entrees);
         response.entrees.forEach(function(entree){
 // Checks the id of the menu item againse the special API //
   if (entree.id === specResponse.menu_item_id) {
-      var specHtml = `<span><b>Today's Special</b></span>
-      <br>       
-      <img src="./images/sea-scallops-yum.jpg">
-      <br>
-      <span>${entree.item}</span>
-      <span>${entree.price}</span>
-      <br>
-      <span>${entree.description}</span>`
-      $('.specials').append( specHtml );
-      }
+        var specHtml = `<span><b>Today's Special</b></span>
+        <br>       
+        <img src="./images/sea-scallops-yum.jpg">
+        <br>
+        <span>${entree.item}</span>
+        <span>${entree.price}</span>
+        <br>
+        <span>${entree.description}</span>`
+        $('.specials').append( specHtml );
+       }
     });
         });
   menuItemTemplate(response.sides);
