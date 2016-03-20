@@ -1,7 +1,6 @@
 // Javascript Entry Point
 import $ from "jquery";
 
-
 $(".tab-container").on("click", "button", function(event){
 	$(".tab-container").addClass("hide");
 	$(event.currentTarget).parent().removeClass("hide");
@@ -134,7 +133,6 @@ request.then(function(response){
          <li class="spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water.">${app.spicy}</a></li>
          <li class="vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products.">${app.vegan}</a></li>
        </ul>
-       
       </div>
      </div>`
   	 $('.menu').append(appzHtml);
