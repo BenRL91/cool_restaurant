@@ -98,11 +98,10 @@ main{
 	
 	display: flex;
 	justify-content: space-between;
-	// flex-wrap: wrap;
 	.tab-wrapper {
-		min-height: 3000px;
+		min-height: 1800px;
 		max-height: 10000px;
-		border: 1px solid #ccc;
+		// border: 1px solid #ccc;
 		padding: 15px;
 		width: 100%;
 		display: flex;
@@ -182,7 +181,7 @@ main{
 
 button{
 	border:none;
-	margin-left: 4px;
+	margin-left: 5px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -201,11 +200,25 @@ button:hover{
 
 
 .reservation{
+
 form{
+	font-size: large;
+	margin-left:25px;
+	margin-bottom:50px;
+	margin-top:50px;
 	display:flex;
 	flex-direction:column;
-	label{
+	width: 500px;
 
+	label{
+		margin-bottom: 10px;
+	}
+	textarea{
+			padding:50px;
+		}
+	input{
+		margin-bottom: 20px;
+		padding:5px;
 	}
 }
 
