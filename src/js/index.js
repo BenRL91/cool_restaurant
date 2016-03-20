@@ -188,12 +188,12 @@ function sideItemTemplate(menuItemArray){
   var menuItemHtml = `
     ${title}
      <div class="menu-items">
-     <div class="menulineup">
+     <div class="sidelineup">
        <h4>${menuItem.item}</h4> 
        <h5>$${menuItem.price}</h5>
       </div>
-      <div class="menulineup">
-       <p>${menuItem.description}</p>
+      <div class="sidelineup">
+       <p></p>
         <ul class="picky-eaters">
          ${allergiesListItem}
          ${favoriteListItem}
@@ -201,7 +201,7 @@ function sideItemTemplate(menuItemArray){
          ${veganListItem}
        </ul>
       </div>
-     </div>`
+     </div><br>`
     $('.menu').append(menuItemHtml);
   })
 };
