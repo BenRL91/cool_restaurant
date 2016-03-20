@@ -11,8 +11,8 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 	position: relative;
 	margin: auto;
 	width: 1200px;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	// border-left: 1px solid black;
+	// border-right: 1px solid black;
 }
 a {
 	text-decoration: none;
@@ -26,30 +26,31 @@ header{
 	.logo{
 		font-size: 4em;
 		padding-bottom: 20px;
+		padding-right: 400px;
 	}
 		.socialicons1{
 		background: url('../images/open-table.png');
 		background-size: 100%;
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 		}
 		.socialicons2{
 		background: url('../images/twitterblk.png');
 		background-size: 100%;
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 		}
 		.socialicons3{
 		background: url('../images/instagram.jpg');
 		background-size: 100%;
-		width: 55px;
-		height: 55px;
+		width: 35px;
+		height: 35px;
 		}
 		.socialicons4{
 		background: url('../images/facebookBW.png');
 		background-size: 100%;
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 		}
 
 }
@@ -131,6 +132,54 @@ main{
 		}
 	}
 }
+
+
+
+.menulineup{
+	margin-left:20px;
+	width:700px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.sidelineup{
+	margin-left:20px;
+	width:700px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+
+}
+
+.menu-items{
+		display:inline-block;
+
+	h4{
+
+	}
+
+	h5{
+
+	}
+
+	p{
+		padding-right: 25px;
+		text-align: justify;
+
+
+	}
+
+.picky-eaters{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+
+	}
+}
+
+
+
 button{
 	border:none;
 	margin-left: 4px;
@@ -148,6 +197,24 @@ button:focus {
 button:hover{
 	background-color: #999;
 }
+
+
+
+.reservation{
+form{
+	display:flex;
+	flex-direction:column;
+	label{
+
+	}
+}
+
+
+
+}
+
+
+
 aside {
 	width: 390px;
 	display: flex;

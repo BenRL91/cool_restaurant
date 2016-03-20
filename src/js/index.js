@@ -83,15 +83,18 @@ function appItemTemplate(menuItemArray){
   var menuItemHtml = `
     ${title}
      <div class="menu-items">
-       <h4>${menuItem.item}</h4> 
-       <h5>$${menuItem.price}</h5>
-       <p>${menuItem.description}</p>
+       <div class="menulineup">
+         <h4>${menuItem.item}</h4> 
+         <h5>$${menuItem.price}</h5>
+       </div>
+       <div class="menulineup"><p>${menuItem.description}</p>
         <ul class="picky-eaters">
          ${allergiesListItem}
          ${favoriteListItem}
          ${spicyListItem}
          ${veganListItem}
-       </ul>
+        </ul>
+       </div>
      </div>`
     $('.menu').append(menuItemHtml);
   })
@@ -132,8 +135,11 @@ function entreeItemTemplate(menuItemArray){
   var menuItemHtml = `
     ${title}
      <div class="menu-items">
+      <div class="menulineup">
        <h4>${menuItem.item}</h4> 
        <h5>$${menuItem.price}</h5>
+      </div>
+      <div class="menulineup">
        <p>${menuItem.description}</p>
         <ul class="picky-eaters">
          ${allergiesListItem}
@@ -141,6 +147,7 @@ function entreeItemTemplate(menuItemArray){
          ${spicyListItem}
          ${veganListItem}
        </ul>
+      </div>
      </div>`
     $('.menu').append(menuItemHtml);
   })
@@ -181,16 +188,20 @@ function sideItemTemplate(menuItemArray){
   var menuItemHtml = `
     ${title}
      <div class="menu-items">
+     <div class="sidelineup">
        <h4>${menuItem.item}</h4> 
        <h5>$${menuItem.price}</h5>
-       <p>${menuItem.description}</p>
+      </div>
+      <div class="sidelineup">
+       <p></p>
         <ul class="picky-eaters">
          ${allergiesListItem}
          ${favoriteListItem}
          ${spicyListItem}
          ${veganListItem}
        </ul>
-     </div>`
+      </div>
+     </div><br>`
     $('.menu').append(menuItemHtml);
   })
 };
