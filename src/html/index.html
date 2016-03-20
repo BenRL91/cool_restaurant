@@ -129,6 +129,34 @@
         		</div>
           </div>
 
+          <div class="tab-container hide">
+            <button>COMMENTS/REVIEWS</button>
+            <div class="comments tab">
+              <div id="disqus_thread"></div>
+              <script>
+                /**
+                * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                */
+                
+                var disqus_config = function () {
+                this.page.url = "http://tiy-2016q1-benlee-cool_restaurant.surge.sh/"; // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = Noma_Restaurant_Project; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+
+                  s.src = '//nomarestaurant.disqus.com/embed.js';
+
+                  s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              
+            </div>
+          </div>
 
       </div>
 
@@ -158,6 +186,7 @@
   
 
   </div>   <!-- (.app closing tag) -->
+    
     <script>
       var map;
             
@@ -171,6 +200,7 @@
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeIqqZdd6zGeyLdGzxv3V7HnYAaMo_O-U&callback=initMap">
     </script>
+    <script id="dsq-count-scr" src="//nomarestaurant.disqus.com/count.js" async></script>
   <script src="js/bundle.js"></script>
 </body>
 </html>
