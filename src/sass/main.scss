@@ -20,6 +20,10 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 	border-right: 1px solid black;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 header{
 	display: flex;
@@ -181,5 +185,17 @@ aside {
 	img {
 		//img size may change//
 		width: 380px;
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		img {
+		height: 20px;
+			.greyed {
+				opacity: 20%;
+			}
 		}
 	}
