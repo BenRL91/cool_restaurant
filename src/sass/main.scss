@@ -15,7 +15,6 @@ $noma-font: 'Dosis', sans-serif, helvetica, arial;
 	position: relative;
 	margin: auto;
 	width: 1200px;
-	// background-color: #ccc;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 }
@@ -152,7 +151,10 @@ main{
 	}
 }
 
-
+.tab-wrapper {
+	min-height: 3000px;
+	max-height: 10000px;
+};
 
 button{
 	border:none;
