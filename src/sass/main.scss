@@ -1,46 +1,49 @@
 @import 'normalize';
+@import 'font-awesome';
 
 $noma-font: 'Dosis', sans-serif, helvetica, arial;
 
 * {	
 	box-sizing: border-box;
-
 	// border: 1px solid red;
 }
-
 .app {
 	position: relative;
 	margin: auto;
 	width: 1200px;
-	// background-color: #ccc;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 }
-
-
+a {
+	text-decoration: none;
+}
 header{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	font-family: $noma-font;
 	height: 100%;
-
-
 	.logo{
 		font-size: 4em;
 		padding-bottom: 20px;
 
-		.sprite {
-	background: url('imgs/ more-social-media-icons.png') no-repeat -771px -69px;
-	width: 50px;
-	height: 50px;
+
+	// 	.sprite {
+	// background: url('imgs/ more-social-media-icons.png') no-repeat -771px -69px;
+	// width: 50px;
+	// height: 50px;
 			
-		}
+
+	// .socialicons{
+	// 	background: url('imgs/ more-social-media-icons.png') no-repeat -388px -202px;
+	// 	background-size: 576px 390px;
+	// 	width: 158px;
+	// 	height: 158px;
+
+	// 	}
 
 	}
 }
-
-
 .hero {
 	width: 100%;
 	img{
@@ -49,9 +52,6 @@ header{
 
 	}
 }
-
-
-
 main{
 
 	display: flex;
@@ -59,32 +59,20 @@ main{
 	margin:15px;
 
 }
-
-
-
 .blog {
 	width: 350px;
 	border: 1px solid gray;
 	padding: 15px;
 
 }
-
-
 .specials {
 	width: 350px;
 	border: 1px solid gray;
 	padding: 15px;
-
-
 }
-
-
 .specials img{
 	width: 100%;
-
 }
-
-
 .map_wrapper{
 	border: 1px solid gray;
 	display:flex;
@@ -92,20 +80,18 @@ main{
 	justify-content:space-between;
 	padding: 15px;
 }
-
-
 #map {
 	height: 400px;
 	width: 350px;	
 }
-
-
 .main-aside {
 	
 	display: flex;
 	justify-content: space-between;
 	// flex-wrap: wrap;
 	.tab-wrapper {
+		min-height: 3000px;
+		max-height: 10000px;
 		border: 1px solid #ccc;
 		padding: 15px;
 		width: 100%;
@@ -117,61 +103,59 @@ main{
 		}
 	}
 }
-
 .tab-container {
-
-
 	.tab {
 		border-bottom: 2px solid #ccc;
 		padding: 15px;
 		background-color:#999;;
-		// border: 1px solid #999;
 		position: absolute;
 		left: 20px;
 		width: 64%;
 	}
 	&.hide {
+		button {
+		background-color: #C0C0C0;
+		}
 		.tab {
 			position: absolute;
 			display: none;
-
 		}
 	}
 }
-
-
-
 button{
 	border:none;
-	margin-left: 15px;
+	margin-left: 4px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-
-
+	background-color: #999;
 }
-
 button:focus {
 	outline:0;
-	// color: #7E5E99;
 }
-
 button:hover{
 	background-color: #999;
-
 }
-
-
 aside {
 	width: 390px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	img {
-		//img size may change//
 		width: 380px;
 		}
 	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		img {
+		height: 20px;		
+		}
+	}
+.greyed {
+	opacity: .2;
+}
