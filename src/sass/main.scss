@@ -194,8 +194,35 @@ aside {
 		list-style-type: none;
 		img {
 		height: 20px;
-			.greyed {
-				opacity: 20%;
-			}
+		
 		}
 	}
+
+.greyed {
+	opacity: .2;
+}
+.grayed {
+	opacity: .2;
+	// THE ABOVE CLASSES WERE MADE BECAUSE OF A JS MISTAKE. WHEN ITS FIXED WE WILL PICK ONE
+}
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
