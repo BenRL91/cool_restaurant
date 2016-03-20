@@ -69,13 +69,13 @@ function menuItemTemplate(menuItemArray){
     if (menuItem.spicy === 1) { 
       spicyListItem = `<li class="spicy is-spicy"><a href="#" title="This item is spicy, please handle with care and drink lots of water."><img src="./images/spicy.png"></a></li>`
     } else { 
-      spicyListItem = `<li class="spicy grayed"><a href="#"><img src="./images/spicy.png"></a></li>`
+      spicyListItem = `<li class="spicy greyed"><a href="#"><img src="./images/spicy.png"></a></li>`
     };
 
     if (menuItem.vegan === 1) {
       veganListItem = `<li class="vegan is-vegan"><a href="#" title="This item contains no meat and has been prepared without the use of animal products."><img src="./images/vegan.png"></a></li>`
     } else {
-      veganListItem = `<li class="vegan grayed"><a href="#"><img src="./images/vegan.png"></a></li>`
+      veganListItem = `<li class="vegan greyed"><a href="#"><img src="./images/vegan.png"></a></li>`
     };
   var menuItemHtml = `
      <div class="menu-items">
