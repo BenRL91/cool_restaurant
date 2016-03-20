@@ -1,6 +1,4 @@
 @import 'normalize';
-
-// GETTING AN ERROR WHEN I TYPE THIS EVEN THOUGH ITS BEEN INSTALLED.
 @import 'font-awesome';
 
 $noma-font: 'Dosis', sans-serif, helvetica, arial;
@@ -202,10 +200,6 @@ aside {
 
 .greyed {
 	opacity: .2;
-}
-.grayed {
-	opacity: .2;
-	// THE ABOVE CLASSES WERE MADE BECAUSE OF A JS MISTAKE. WHEN ITS FIXED WE WILL PICK ONE
 }
 			
 
