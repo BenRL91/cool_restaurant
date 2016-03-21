@@ -34,11 +34,13 @@ entreeItemTemplate(response.entrees);
 // Checks the id of the menu item againse the special API //
   if (entree.id === specResponse.menu_item_id) {
         var specHtml = `<span><b>Today's Special</b></span>
-        <br>       
+        <br> <br>      
         <img src="./images/sea-scallops-yum.jpg">
         <br>
+        <div class="special-spans">
         <span>${entree.item}</span>
         <span>${entree.price}</span>
+        </div>
         <br>
         <span>${entree.description}</span>`
         $('.specials').append( specHtml );
