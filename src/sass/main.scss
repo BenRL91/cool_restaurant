@@ -26,7 +26,7 @@ header{
 	.logo{
 		font-size: 4em;
 		padding-bottom: 20px;
-		padding-right: 400px;
+		padding-right: 450px;
 	}
 		.socialicons1{
 		background: url('../images/open-table.png');
@@ -56,6 +56,7 @@ header{
 }
 .hero {
 	width: 100%;
+	padding-bottom: 25px;
 	img{
 		width: 100%;
 		height: 100%;
@@ -66,43 +67,54 @@ main{
 
 	display: flex;
 	justify-content:space-between;
-	margin:15px;
+	margin-top:120px;
+	margin-bottom:120px;
 
 }
 .blog {
 	width: 350px;
-	border: 1px solid gray;
-	padding: 15px;
+
+	// border: 1px solid gray;
+	// padding: 15px;
+	text-align: justify;
 
 }
 .specials {
 	width: 350px;
-	border: 1px solid gray;
-	padding: 15px;
+	text-align: justify;
+	// border: 1px solid gray;
+	// padding: 15px;
 }
+
+.special-spans{
+	display:flex;
+	justify-content:space-between;
+	font-weight: bold;
+}
+
 .specials img{
 	width: 100%;
 }
 .map_wrapper{
-	border: 1px solid gray;
+	// border: 1px solid gray;
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	padding: 15px;
+	justify-content: flex-start;
+	// padding: 15px;
 }
 #map {
-	height: 400px;
-	width: 350px;	
+	height: 350px;
+	width: 350px;
+	padding-bottom: 50px;	
 }
 .main-aside {
 	
 	display: flex;
 	justify-content: space-between;
-	// flex-wrap: wrap;
 	.tab-wrapper {
-		min-height: 3000px;
+		min-height: 1800px;
 		max-height: 10000px;
-		border: 1px solid #ccc;
 		padding: 15px;
 		width: 100%;
 		display: flex;
@@ -115,9 +127,9 @@ main{
 }
 .tab-container {
 	.tab {
-		border-bottom: 2px solid #ccc;
 		padding: 15px;
-		background-color:#999;;
+		// background-color:#999;
+		background-color:#797978;
 		position: absolute;
 		left: 20px;
 		width: 64%;
@@ -184,30 +196,46 @@ main{
 
 button{
 	border:none;
-	margin-left: 4px;
+
+	margin-left: 5px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-	background-color: #999;
+	background-color: #797978;
 }
 button:focus {
 	outline:0;
+	color:black;
 }
 button:hover{
-	background-color: #999;
+	background-color: #797978;
 }
 
 
 
 .reservation{
+
 form{
+	font-size: large;
+	margin-left:25px;
+	margin-bottom:50px;
+	margin-top:50px;
 	display:flex;
 	flex-direction:column;
-	label{
+	width: 500px;
 
+	label{
+		margin-bottom: 10px;
+	}
+	textarea{
+			padding:50px;
+		}
+	input{
+		margin-bottom: 20px;
+		padding:5px;
 	}
 }
 
@@ -223,6 +251,7 @@ aside {
 	flex-direction: column;
 	align-items: center;
 	img {
+		margin-top:61px;
 		width: 380px;
 		}
 	}
