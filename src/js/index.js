@@ -100,8 +100,10 @@ usableResponse.forEach(function(menuItemArray){
         <br>       
         <img src="./images/sea-scallops-yum.jpg">
         <br>
+        <div class="special-spans">
         <span>${entree.item}</span>
-        <span>${entree.price}</span>
+        <span>$${entree.price}</span>
+        </div>
         <br>
         <span>${entree.description}</span>`
        $('.specials').append( specHtml );
